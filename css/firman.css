@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --main_bg:#FAC730;
+    --btn_bg :#42B241;
+}
+body{
+   background-color:  #F2F2F2;
+}
+
+.navbar{
+    background-color: var(--main_bg) ;
+}
+.nav-link{
+    color:  #000 !important;
+}
+.nav-item{
+    margin-right: 20px;
+}
+.my_custom_btn{
+    width: 286px;
+    height: 78px;
+    font-weight: 600;
+    border-radius: 39px;
+    font-size: 25px;
+    color: #fff;
+    background-color: var(--btn_bg) ;
+}
+.my_custom_btn:hover{
+    color: var(--btn_bg);
+    background-color: #fff;
+    border: 1px solid var(--btn_bg);
+}
+
+/* hero  */
+.hero{
+    background-image: url(../img/firman_hero.png);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    padding-top: 190px ;
+    padding-bottom: 320px;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 101px;
+}
+.hero p{
+    color: #fff;
+    font-size: 45px;
+}
+/* firman */
+.firman p{
+    font-size: 1.3rem;
+}
+.firman .row{
+    padding: 39px 0;
+}
+/* promo */
+.promo {
+	background-image: url(../img/home4.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	padding-top: 300px;
+	padding-bottom: 250px;
+}
+.promo h1{
+    color: #fff;
+    margin-bottom: 80px ;
+}
+.promo p{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 1.4rem;
+}
+/* fir_bot */
+.fir_bot{
+    padding: 150px 0;
+}
+.fir_text{
+    font-size: 1.25rem;
+    background-color: var(--main_bg);
+    padding: 40px ;
+    border-radius: 1rem;
+    position: relative;
+    top: 67px;
+    right: 118px;
+}
+/* contact */
+.contact{
+    background-image: url(../img/footjuice.png) ;
+    background-repeat: no-repeat;
+    background-position: 86%;
+    padding: 100px 0;
+}
+.contact h1{
+    font-weight: 400;
+    font-size: 3.75rem;
+}
+.contact input{
+    font-size: 1.25rem;
+    background-color: #f7f7f7 ;
+    border: 1px solid #d9d9d9;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+input:focus-visible {
+	outline: none;
+}
+textarea:focus-visible{
+    outline: none;
+}
+.contact textarea{
+    font-size: 1.25rem;
+    background-color: #f7f7f7 ;
+    border: 1px solid #d9d9d9;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+    resize: none;
+}
+.contact input:placeholder-shown{
+    letter-spacing: 2px;
+}
+/* footer */
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer .first_ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.footer ul li{
+    margin-right: 20px;
+}
+.footer p{
+    width: 75%;
+}
+.footer .sec_ul{
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+.sec_ul li{
+    margin: 10px 0;
+}
+.sec_ul a{
+    color: #fff;
+    text-decoration: none;
+}
+/* copy */
+.copy{
+    background-color: var(--btn_bg);
+    padding-top: 10px;
+}
+.social_ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.social_ul li{
+    margin: 0 10px ;
+}
+.copy_holder{
+    display: flex;
+    justify-content: space-between;
+}
+.copy_holder a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:1399px) {
+    .hero h1 {
+        font-size: 93px;
+    }
+    .hero p{
+        font-size: 26px;
+    }
+    .hero{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .promo{
+        padding-top: 180px;
+        padding-bottom: 140px;
+    }
+    .contact {
+        background-position: 100%;
+    }
+}
+@media (max-width:991px) {
+    .contact {
+        background-size: 100%;
+    }
+}
+@media (max-width:767px) {
+    
+    .navbar-brand.p-0 {
+        width: 75%;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    .my_custom_btn {
+        width: 200px;
+        height: 55px;
+        font-weight: 600;
+        border-radius: 39px;
+        font-size: 20px;
+        color: #fff;
+        background-color: var(--btn_bg);
+    }
+    .contact h1 {
+        font-size: 3rem;
+    }
+    .contact{
+        background-size: auto 100%;
+    background-position: 50%;    
+}
+.fir_text {
+	
+ position:static ; 
+ padding: 20px;
+ 
+	
+}
+    
+}
